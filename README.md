@@ -10,6 +10,6 @@ Au plaisir de lire votre code !
 
 ## Katas
 
-[Bank Account](/StringCalculator)
+[Bank Account](/BankAccount)
 
 [String Calculator](/StringCalculator)
