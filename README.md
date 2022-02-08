@@ -8,8 +8,13 @@ Si vous êtes familier avec le TDD, n'hésitez pas à réaliser des commits inte
 
 Au plaisir de lire votre code !
 
-## Katas
+## Java Optim
+Pour les moins timides, un kata qui permet d'évaluer l'élégance algorithmique.
+
+[Produire une collision de hashcodes pour 3 chaînes de caractères](/optim-SameHashCode)
+
+## Programmation OO et archi hexa
+[String Calculator](/StringCalculator)
 
 [Bank Account](/BankAccount)
 
-[String Calculator](/StringCalculator)
