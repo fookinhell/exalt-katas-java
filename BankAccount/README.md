@@ -1,7 +1,7 @@
 # Bank Account Kata
 
 ## Directives
-Dans la mesure de votre niveau de séniorité et d'expérience, nous vous proposons de résoudre ce kata avec une architecture hexagonale et en adoptant une routine TDD red/green/refactor.
+Dans la mesure de votre niveau de séniorité et d'expérience, nous vous proposons de résoudre ce kata avec une architecture hexagonale et en adoptant une routine TDD red/green/refactor. (no frameworks are required, just focus on solving the domain problem)
 
 ## Bank Account
 Bank account kata Think of your personal bank account experience When in doubt, go for the simplest solution Requirements
