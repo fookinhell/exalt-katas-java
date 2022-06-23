@@ -1,7 +1,7 @@
 # Bank Account Kata
 
 ## Directives
-Dans la mesure de votre niveau de séniorité et d'expérience, vous proposez la meilleure implémentation possible de Bank Account, suivant le principe d'une architecture hexagonale.
+Dans la mesure de votre niveau de séniorité et d'expérience, nous vous proposons de résoudre ce kata avec une architecture hexagonale et en adoptant une routine TDD red/green/refactor. (no frameworks are required, just focus on solving the domain problem)
 
 Le kata est incrémental : en partant des stories, vous implémentez le modèle métier que vous exposez au-travers de ports; dans un 2nd temps, vous développez les adapteurs de l'application.
 
