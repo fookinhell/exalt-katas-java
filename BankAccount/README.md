@@ -1,28 +1,33 @@
 # Bank Account Kata
 
 ## Directives
-Dans la mesure de votre niveau de séniorité et d'expérience, nous vous proposons de résoudre ce kata avec une architecture hexagonale et en adoptant une routine TDD red/green/refactor. (no frameworks are required, just focus on solving the domain problem)
 
-Le kata est incrémental : en partant des stories, vous implémentez le modèle métier que vous exposez au-travers de ports; dans un 2nd temps, vous développez les adapteurs de l'application.
+Ce kata est un challenge d'architecture hexagonale, il s'implémente par étape avec un **1er focus sur le domaine métier**.
 
 Vos commits successifs dans Git retranscrivent vos étapes et le cycle TDD red/green/refactor si vous décidez de l'adopter. 
 
-## Etape 1 - Le modèle métier
+### Etape 1 - Le modèle métier
 
-Dans une 1ère itération, vous implementez le modèle : votre code est orienté métier, simple, efficace et non-anémique.
+1ère étape est essentielle, vous vous concentrez sur le modèle métier : simple, efficace et non-anémique.
 
-## Etape 2 - Adapteur API
+Vous l'isolez derrière les ports.
 
-Vous ajoutez un adapteur Spring qui expose votre application au travers de routes HTTP qui respectent les meilleurs standards d'une REST API.
+```
+ATTENTION - CETTE PREMIERE ETAPE EST PRIMORDIALE
+Elle devra être matérialisée proprement dans vos commits.
+Elle est attendue par nos clients et ne devrait pas excéder 2h d'implémentation.
+```
+
+### Etape 2 - Adapteur API
+
+Implémentation d'un adapteur Spring qui expose l'application en respectant les meilleurs standards d'une REST API.
 
 ## Etape 3 - Adapteur de Persistence
 
-Vous ajoutez l'adapteur de persistence de votre choix (SQLlite, H2, ...).
+Implémentation d'un adapteur de persistence de votre choix (SQLlite, H2, ...).
 
-
-```
 ## User Stories
-
+```
 In order to implement this Kata, think of your personal bank account experience.
 When in doubt, go for the simplest solution Requirements
 
