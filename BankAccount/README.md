@@ -22,7 +22,7 @@ Elle est attendue par nos clients et ne devrait pas excéder 2h d'implémentatio
 
 Implémentation d'un adapteur Spring qui expose l'application en respectant les meilleurs standards d'une REST API.
 
-## Etape 3 - Adapteur de Persistence
+### Etape 3 - Adapteur de Persistence
 
 Implémentation d'un adapteur de persistence de votre choix (SQLlite, H2, ...).
 
