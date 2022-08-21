@@ -5,7 +5,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -37,9 +36,11 @@ class StringCalculatorKataTest {
             "'18,7', 25",
             "'54,45\n65', 164",
             "'13,146,2,27,18\n16,54', 276",
-            "'12\n10,24\n4', 50"
+            "'12\n10,24\n4', 50",
+            "'//;\n3;9', 12",
+            "'//\\+\n30+18', 48" // '+' is a reserved RegEx character so need to scape
     })
-    public void step3_test(String numbers, int expectedResult) {
+    public void step4_test(String numbers, int expectedResult) {
         assertEquals(expectedResult, calculator.add(numbers));
     }
 }
