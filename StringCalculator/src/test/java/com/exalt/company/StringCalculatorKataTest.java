@@ -27,6 +27,15 @@ class StringCalculatorKataTest {
         String numbers = "13,146,2,27,18,16,54r";
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> calculator.add(numbers));
         assertTrue(exception.getMessage().contains("Something else than a number was entered"));
+        exception.printStackTrace();
+    }
+
+    @Test
+    public void step5_testWithNegativeValues() {
+        String numbers = "18\n-8,30\n-98";
+        Throwable exception = assertThrows(IllegalArgumentException.class, () -> calculator.add(numbers));
+        assertTrue(exception.getMessage().contains("Negative values are not allowed"));
+        exception.printStackTrace();
     }
 
     @ParameterizedTest(name = "\"{0}\" should return {1}")
