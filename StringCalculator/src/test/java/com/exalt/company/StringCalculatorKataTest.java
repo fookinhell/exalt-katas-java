@@ -35,10 +35,11 @@ class StringCalculatorKataTest {
             "'', 0",
             "'18', 18",
             "'18,7', 25",
-            "'54,45,65', 164",
-            "'13,146,2,27,18,16,54', 276"
+            "'54,45\n65', 164",
+            "'13,146,2,27,18\n16,54', 276",
+            "'12\n10,24\n4', 50"
     })
-    public void step2_test(String numbers, int expectedResult) {
+    public void step3_test(String numbers, int expectedResult) {
         assertEquals(expectedResult, calculator.add(numbers));
     }
 }
