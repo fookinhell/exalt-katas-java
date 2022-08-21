@@ -24,15 +24,8 @@ class StringCalculatorKataTest {
     }
 
     @Test
-    public void testWithMoreThanTwoNumbers() {
-        String numbers = "18,7,20";
-        Throwable exception = assertThrows(IllegalArgumentException.class, () -> calculator.add(numbers));
-        assertTrue(exception.getMessage().contains("The argument must take up to two numbers"));
-    }
-
-    @Test
     public void testWithInvalidCharacter() {
-        String numbers = "18;9";
+        String numbers = "13,146,2,27,18,16,54r";
         Throwable exception = assertThrows(IllegalArgumentException.class, () -> calculator.add(numbers));
         assertTrue(exception.getMessage().contains("Something else than a number was entered"));
     }
@@ -42,9 +35,10 @@ class StringCalculatorKataTest {
             "'', 0",
             "'18', 18",
             "'18,7', 25",
-            "'54,45', 99"
+            "'54,45,65', 164",
+            "'13,146,2,27,18,16,54', 276"
     })
-    public void step1_testWithTwoOrLessNumbers(String numbers, int expectedResult) {
+    public void step2_test(String numbers, int expectedResult) {
         assertEquals(expectedResult, calculator.add(numbers));
     }
 }
