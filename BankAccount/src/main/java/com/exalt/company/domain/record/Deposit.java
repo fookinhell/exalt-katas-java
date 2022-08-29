@@ -10,6 +10,6 @@ public class Deposit extends RegistryRecord {
 
     @Override
     public double execute() {
-        return balance += amount;
+        return balance + amount;
     }
 }

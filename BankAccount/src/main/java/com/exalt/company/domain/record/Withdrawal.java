@@ -10,6 +10,6 @@ public class Withdrawal extends RegistryRecord {
 
     @Override
     public double execute() {
-        return balance -= amount;
+        return balance - amount;
     }
 }

@@ -42,9 +42,10 @@ public abstract class RegistryRecord implements IRegistryRecord {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("uuuu/MM/dd HH:mm:ss");
         String sign = (recordType == RecordType.DEPOSIT) ? "+" : "-";
         return "[" + dtf.format(localDateTime) + "]"
-                + " record type : " + recordType.toString()
+                + " balance : " + balance
+                + ", record type : " + recordType.toString()
                 + ", amount : " + sign + amount
-                + ", new balance : " +balance;
+                + ", new balance : " + execute();
     }
 
     public abstract double execute();
