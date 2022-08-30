@@ -2,10 +2,12 @@ package com.exalt.company.service;
 
 import com.exalt.company.domain.BankAccount;
 import com.exalt.company.port.IBankOperator;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class BankAccountService implements IBankOperator {
 
     private final List<BankAccount> accountList = new ArrayList<>();
@@ -15,6 +17,11 @@ public class BankAccountService implements IBankOperator {
         bankAccount.deposit(100); // balance = 600
         bankAccount.withdraw(300); // balance = 300
         accountList.add(bankAccount);
+    }
+
+    @Override
+    public BankAccount getAccount(int id) {
+        return accountList.get(id);
     }
 
     @Override
@@ -28,12 +35,12 @@ public class BankAccountService implements IBankOperator {
     }
 
     @Override
-    public double balance(int id) {
+    public double getBalance(int id) {
         return accountList.get(id).getBalance();
     }
 
     @Override
-    public String history(int id) {
+    public String getHistory(int id) {
         return accountList.get(id).history();
     }
 }
