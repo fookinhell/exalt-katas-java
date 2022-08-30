@@ -2,11 +2,11 @@ package com.exalt.company.port;
 
 public interface IBankOperator {
 
-    void deposit(double amount);
+    void deposit(int id, double amount);
 
-    void withdraw(double amount);
+    void withdraw(int id, double amount);
 
-    double getBalance();
+    double balance(int id);
 
-    String getHistory();
+    String history(int id);
 }

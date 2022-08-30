@@ -48,7 +48,7 @@ class BankAccountTest {
 
         account.deposit(amountToDeposit);
 
-        System.out.println(account.getHistory());
+        System.out.println(account.history());
         assertEquals(expectedBalance, account.getBalance());
     }
 
@@ -61,7 +61,7 @@ class BankAccountTest {
 
         account.withdraw(amountToWithdraw);
 
-        System.out.println(account.getHistory());
+        System.out.println(account.history());
         assertEquals(expectedBalance, account.getBalance());
     }
 
@@ -72,9 +72,10 @@ class BankAccountTest {
         account.deposit(200);
         account.withdraw(125);
 
-        System.out.println(account.getHistory());
-        assertTrue(account.getHistory().contains("DEPOSIT, amount : +200.0")
-                && account.getHistory().contains("WITHDRAWAL, amount : -125.0"));
+        String history = account.history();
+        System.out.println(history);
+        assertTrue(history.contains("DEPOSIT, amount : +200.0")
+                && history.contains("WITHDRAWAL, amount : -125.0"));
     }
 
     @ParameterizedTest
@@ -86,7 +87,7 @@ class BankAccountTest {
 
         account.deposit(amountToDeposit);
 
-        System.out.println(account.getHistory());
+        System.out.println(account.history());
         assertEquals(expectedBalance, account.getBalance());
     }
 
@@ -99,7 +100,7 @@ class BankAccountTest {
 
         account.withdraw(amountToWithdraw);
 
-        System.out.println(account.getHistory());
+        System.out.println(account.history());
         assertEquals(expectedBalance, account.getBalance());
     }
 
@@ -110,8 +111,9 @@ class BankAccountTest {
         account.deposit(200);
         account.withdraw(125);
 
-        System.out.println(account.getHistory());
-        assertTrue(account.getHistory().contains("DEPOSIT") && account.getHistory().contains("WITHDRAW"));
+        String history = account.history();
+        System.out.println(history);
+        assertTrue(history.contains("DEPOSIT") && history.contains("WITHDRAW"));
     }
 
 
