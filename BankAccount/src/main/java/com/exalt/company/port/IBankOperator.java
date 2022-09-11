@@ -1,7 +1,6 @@
 package com.exalt.company.port;
 
 import com.exalt.company.domain.BankAccount;
-import org.springframework.http.ResponseEntity;
 
 public interface IBankOperator {
 
