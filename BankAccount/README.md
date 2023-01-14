@@ -65,3 +65,9 @@ I want to see the history (operation, date, amount, balance) of my operations
 
 ## Credits
 Merci aux craftsmen de la SGIB pour leurs exigences qui nous tirent vers le meilleur.
+
+____
+
+## Class diagram
+
+![alt](./uml/BankAccountKata.drawio.svg)
